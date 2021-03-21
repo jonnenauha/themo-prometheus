@@ -343,7 +343,6 @@ func (c *ThemoClient) Devices() error {
 	defer c.Unlock()
 
 	query := url.Values{}
-	query.Set("clientID", "218") // @todo
 	query.Set("state", "false")
 	query.Set("page", "0")
 	query.Set("pageSize", "-1")
